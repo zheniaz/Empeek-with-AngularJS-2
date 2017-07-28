@@ -1,0 +1,22 @@
+﻿
+
+<button (click)="toggleDisk()">Toggle Disk</button>
+<button (click)="toggleDir()">Toggle Dir</button>
+<button (click)="toggleSize()">Toggle Size</button>
+
+<div [ngClass]="{invisibleDisk: visibilityDisk}">
+    <empeek-disk-app>Disks Loading...</empeek-disk-app>
+</div>
+
+
+<div [ngClass]="{invisibleDir: visibilityDir}">
+    <empeek-dir-app>Dirs Loading...</empeek-dir-app>
+</div>
+
+
+<div [ngClass]="{invisibleSize: visibilitySize}">
+    <empeek-count-app>Size Component Loading...</empeek-count-app>
+</div>
+
+
+
